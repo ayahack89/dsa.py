@@ -1,4 +1,5 @@
 # Binary search using numpy.
+#Binary search.
 import numpy as np
 x=[2,5,8,10,15,18,22,26,30,41]
 x=np.array(x)
