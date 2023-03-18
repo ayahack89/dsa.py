@@ -7,6 +7,6 @@ for i in range(0,len(arr)):
     if (arr[i]==search):
         print(f"Element found at {i} position")
         break
-if(search==0):
+else:
     print(f"Element not found {search}")
 
