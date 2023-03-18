@@ -1,4 +1,6 @@
 #Intsertion at the front of a linked list.
+# Structure of a Linked list look like:-
+                 # NodeA->NodeB->NodeC->NodeD->NodeE
 # Conditions :-
 #       1) Secure your previous head value.
 #       2) Create a newNode.
