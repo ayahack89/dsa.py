@@ -3,6 +3,10 @@
 # There are some benifits about linked list, like easy to bolock implement, easy to intiertion, easy to deletation.
 #Code update.
 #At first we create a node block memory. 
+
+# Structure of a Linked list look like:-
+                 # NodeA->NodeB->NodeC->NodeD->NodeE
+
 class List:
     def __init__(self,num):
         self.data=num

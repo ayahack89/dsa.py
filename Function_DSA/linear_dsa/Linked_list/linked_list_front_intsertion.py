@@ -1,4 +1,4 @@
-#Intertion at the front of a linked list.
+#Intsertion at the front of a linked list.
 # Conditions :-
 #       1) Secure your previous head value.
 #       2) Create a newNode.
