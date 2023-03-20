@@ -18,26 +18,23 @@ class linkedList:
         else:
             self.last.address=newNode
             self.last=newNode
+
+# Then we count the position & delete the perticular node.
     def delete_position(self,position):
-        position = position-1
         delete_node=self.head
+        position = position-1
         while (position>0):
             position=position-1
+            previous=delete_node
             delete_node=delete_node.address
-
-        if self.head is None:
-            print("The list is empty.")
-            return print("Error")
-        else:
-            self.head=self.head.address
-            delete_node.address=None
-            return delete_node.data
+        previous.address=delete_node.address
     def printList(self):
         temp=self.head
         while temp is not None:
             print(temp.data)
             temp=temp.address
 
+# Call The Functions.
 o=linkedList()
 a=int(input("Number of inputs:- "))
 for j in range(0,a):
