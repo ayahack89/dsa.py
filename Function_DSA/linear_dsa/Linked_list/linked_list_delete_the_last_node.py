@@ -18,11 +18,11 @@ class linkedList:
             self.last=newNode
     def delete_lastNode(self):
         delete_node=self.head
-        while delete_node is not self.head:
+        while delete_node is not self.last:
             previous=delete_node
             delete_node=delete_node.address
         previous.address=None
-        print(previous.data)
+        print("Deleted item",delete_node.data)
         self.last=previous
     def printList(self):
         temp=self.head
@@ -37,4 +37,3 @@ for j in range(0,a):
     o.create(int(input("Node.data: ")))
 o.delete_lastNode()
 o.printList()
-# CODE ERROR , UNDER CONSTRACTION........

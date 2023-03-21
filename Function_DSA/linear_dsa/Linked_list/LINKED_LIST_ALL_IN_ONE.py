@@ -33,10 +33,7 @@ class linkedList:
         newNode.addrses=temp.address
         temp.address=newNode
     def insert_at_last(self,num):
-        temp=self.head
-        newNode=List(num)
-        self.last.address=newNode
-        self.last=newNode
+        
     def printList(self):
         temp=self.head
         while temp is not None:
