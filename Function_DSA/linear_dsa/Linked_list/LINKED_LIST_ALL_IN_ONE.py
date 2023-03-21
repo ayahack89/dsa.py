@@ -112,6 +112,22 @@ class linkedList:
         previous.address=None
         print("Deleted item",delete_node.data)
         self.last=previous
+    def max_element_found(self):
+        maximum=self.head.data
+        temp=self.head
+        while temp is not None:
+            if temp.data>maximum:
+                maximum=temp.data
+            temp=temp.adress
+        print(f"The maximum element found at {maximum}")
+    def min_element_found(self):
+        minimum=self.head.data
+        temp=self.head
+        while temp is not None:
+            if (temp.data<minimum):
+                minimum=temp.data
+            temp=temp.address
+        print(f"The minimum element found at {minimum}")
     def printList(self):
         temp=self.head
         while temp is not None:
@@ -126,4 +142,4 @@ for v in range(0,a):
 num=int(input("insert node: "))
 xo.insert_at_last(num)
 xo.printList()
-
+#CODE UNDERCONSTRACTION >>>>>>>.
