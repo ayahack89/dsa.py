@@ -85,7 +85,15 @@ class linkedList:
             return delete_node.data
     
 #Delete at random position.......
-#Logic: 
+#Logic: 1)At first we count the position...[position=position-2
+#                                           while(position>0):
+#                                                 position=positon-1]
+#       2)Next we secure the head value...[delete_node=self.head]             
+#       3)Then we secure the previous node in a previous variable & linked the temp node...
+#         [previous=delete_node]
+#       4)Now we jump the node..[delete_node=delete_node.address]
+#       5)At last we applied the main logic , we linked the delete node address part inside 
+#         the previous node........[previous.address=delete_node.address]   
     def delete_at_random_position(self,position):
         delete_node=self.head
         position = position-1
@@ -94,6 +102,8 @@ class linkedList:
             previous=delete_node
             delete_node=delete_node.address
         previous.address=delete_node.address
+
+
     def delete_lastNode(self):
         delete_node=self.head
         while delete_node is not self.last:
