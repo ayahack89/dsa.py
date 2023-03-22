@@ -118,7 +118,7 @@ class linkedList:
         while temp is not None:
             if temp.data>maximum:
                 maximum=temp.data
-            temp=temp.adress
+            temp=temp.address
         print(f"The maximum element found at {maximum}")
     def min_element_found(self):
         minimum=self.head.data
@@ -133,13 +133,77 @@ class linkedList:
         while temp is not None:
             print(temp.data)
             temp=temp.address
-
-
 xo=linkedList()
-a=int(input("Number of inputs (That you want) :- "))
-for v in range(0,a):
-    xo.create(int(input("Node.data: ")))
-num=int(input("insert node: "))
-xo.insert_at_last(num)
-xo.printList()
+choice=str(input(" Choice->1 \n Choice->2 \n Choice->3 \n Choice->4 \n Choice->5 \n Choice->6 \n Choice->7 \n Choice->8 \n Choice->9 \n Enter your choice: "))
+if (choice=='1'):
+    print("All cvalue of Linked list....")
+    p=int(input("Number of Inputs:-"))
+    for s in range(0,p):
+        xo.create(int(input("Node.Data > ")))
+    xo.printList()
+    print("All Values of linked list...")
+elif (choice=='2'):
+    print("Insert a node at first position...")
+    a=int(input("Number of Inputs:-"))
+    for j in range(0,a):
+        xo.create(int(input("Node.Data > ")))
+    num=int(input("Insert a node: "))
+    xo.insert_at_front()
+elif (choice=='3'):
+    print("Insert at random position...")
+    b=int(input("Number of Inputs: "))
+    for h in range(0,b):
+        xo.create(int(input("Node.Data > ")))
+    num=int(input("Insert a node: "))
+    position=int(input("Enter your position_: "))
+    xo.insert_at_random_position(num,position)
+elif (choice=='4'):
+    print("Insert at last position... ")
+    c=int(input("Number of Inputs: "))
+    for i in range(0,c):
+        xo.create(int(input("Node.Data > ")))
+    num=int(input("Insert a node: "))
+    xo.insert_at_last()
+elif (choice=='5'):
+    print("Delete at first position.....")
+    d=int(input("Number of Inputs: "))
+    for l in range(0,d):
+        xo.create(int(input("Node.Data > ")))
+    xo.delete_in_front()
+elif (choice=='6'):
+    print("Delete at random position....")
+    e=int(input("Number of Inputs: "))
+    for m in range(0,e):
+        xo.create(int(input("Node.Data > ")))
+    position=int(input("Enter your position_: "))
+    xo.delete_at_random_position(position)
+elif (choice=='7'):
+    print("Delete at last position....")
+    f=int(input("Number of Inputs: "))
+    for n in range(0,f):
+        xo.create(int(input("Node.Data > ")))
+    xo.delete_lastNode()
+elif (choice=='8'):
+    print("Find the maximum value......")
+    g=int(input("Number of Inputs: "))
+    for u in range(0,g):
+        xo.create(int(input("Node.Data > ")))
+    xo.max_element_found()
+elif (choice=='9'):
+    print("Find the minimum value......")
+    k=int(input("Number of Inputs: "))
+    for w in range(0,k):
+        xo.create(int(input("Node.Data > ")))
+    xo.min_element_found()
+else:
+    print("ERROR.")
+
+    
+    
+
+
+
+
+
+
 #CODE UNDERCONSTRACTION >>>>>>>.
