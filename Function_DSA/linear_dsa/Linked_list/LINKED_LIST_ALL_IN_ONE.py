@@ -148,7 +148,8 @@ elif (choice=='2'):
     for j in range(0,a):
         xo.create(int(input("Node.Data > ")))
     num=int(input("Insert a node: "))
-    xo.insert_at_front()
+    xo.insert_at_front(num)
+    xo.printList()
 elif (choice=='3'):
     print("Insert at random position...")
     b=int(input("Number of Inputs: "))
@@ -157,19 +158,22 @@ elif (choice=='3'):
     num=int(input("Insert a node: "))
     position=int(input("Enter your position_: "))
     xo.insert_at_random_position(num,position)
+    xo.printList()
 elif (choice=='4'):
     print("Insert at last position... ")
     c=int(input("Number of Inputs: "))
     for i in range(0,c):
         xo.create(int(input("Node.Data > ")))
     num=int(input("Insert a node: "))
-    xo.insert_at_last()
+    xo.insert_at_last(num)
+    xo.printList()
 elif (choice=='5'):
     print("Delete at first position.....")
     d=int(input("Number of Inputs: "))
     for l in range(0,d):
         xo.create(int(input("Node.Data > ")))
     xo.delete_in_front()
+    xo.printList()
 elif (choice=='6'):
     print("Delete at random position....")
     e=int(input("Number of Inputs: "))
@@ -177,33 +181,29 @@ elif (choice=='6'):
         xo.create(int(input("Node.Data > ")))
     position=int(input("Enter your position_: "))
     xo.delete_at_random_position(position)
+    xo.printList()
 elif (choice=='7'):
     print("Delete at last position....")
     f=int(input("Number of Inputs: "))
     for n in range(0,f):
         xo.create(int(input("Node.Data > ")))
     xo.delete_lastNode()
+    xo.printList()
 elif (choice=='8'):
     print("Find the maximum value......")
     g=int(input("Number of Inputs: "))
     for u in range(0,g):
         xo.create(int(input("Node.Data > ")))
     xo.max_element_found()
+    xo.printList()
 elif (choice=='9'):
     print("Find the minimum value......")
     k=int(input("Number of Inputs: "))
     for w in range(0,k):
         xo.create(int(input("Node.Data > ")))
     xo.min_element_found()
+    xo.printList()
 else:
     print("ERROR.")
-
-    
-    
-
-
-
-
-
 
 #CODE UNDERCONSTRACTION >>>>>>>.
