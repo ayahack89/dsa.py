@@ -1,6 +1,7 @@
 # Stack implementation using Linked List,.
 #Structure of a Linked list look like:-
                  # NodeA->NodeB->NodeC->NodeD->NodeE
+#The Stack is a concept of LIFO > Last In First Out. 
 #So this is a basic concept of Linked List...
 class node:
     def __init__(self,data):
