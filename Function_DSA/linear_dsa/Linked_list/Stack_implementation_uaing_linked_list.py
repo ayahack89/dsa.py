@@ -6,7 +6,7 @@ class node:
     def __init__(self,data):
         self.data=data
         self.address=None
-class linkedList:
+class Stack:
     def __init__(self):
         self.head=None
     def create(self,data):
@@ -32,7 +32,7 @@ class linkedList:
 
 
 # Call...
-co=linkedList()
+co=Stack()
 a=int(input("Number of inputs:- "))
 for j in range(0,a):
     co.create(int(input("Node.data: ")))
@@ -40,8 +40,10 @@ choice=str(input(" Push->1 \n Pop->2 \n Enter your choice: "))
 if (choice=='1'):
     data=int(input("Insert a element-> "))
     co.push(data)
+    print("Data inserted...")
 elif (choice=='2'):
     co.pop()
+    print("Data deleted...")
 else:
     print("ERROR")
     
