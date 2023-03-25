@@ -22,7 +22,6 @@ class Queue:
     def rear(self,data):
         newNode=node(data)
         if self.head is not None:
-            print("Head is full , we can't insert the node. ")
             return print("FULL")
         else:
             self.head=newNode.address
