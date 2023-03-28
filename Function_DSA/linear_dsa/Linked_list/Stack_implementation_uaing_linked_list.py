@@ -7,6 +7,8 @@ class node:
     def __init__(self,data):
         self.data=data
         self.address=None
+        
+#Now we implement the Stack portion using llinked list.....
 class Stack:
     def __init__(self):
         self.top=None
@@ -22,23 +24,22 @@ class Stack:
         if self.top is None:
             print("Linked List is empty, can't delete it.")
             return print("ERROR")
-        if self.head is None:
-            print("Linked List is empty , can't delete its.")
-            return print("ERROR.")
         else:
+            print(self.top.data)
             self.top=self.top.address
 
 #Call....
 co=Stack()
-choice=str(input(" Push->1 \n Pop->2 \n Enter your choice:"))
-if (choice=='1'):
-    a=int(input("Number of Inputs:- "))
-    for j in range(0,a):
-        data=int(input("Node.Data: "))
-        co.push(data)
-        print("Data Inserted.....")
-elif (choice=='2'):
-    co.pop()
-    print("Data deleted.....")
-else:
-    print("ERROR")
+while True:
+    choice=str(input(" Push->1 \n Pop->2 \n Enter your choice:"))
+    if (choice=='1'):
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            data=int(input("Node.Data: "))
+            co.push(data)
+            print("Data Inserted.....")
+    elif (choice=='2'):
+        co.pop()
+        print("Data deleted.....")
+    else:
+        print("ERROR")
