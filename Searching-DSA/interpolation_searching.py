@@ -17,4 +17,4 @@ while(low<=high):
     elif (array[formula]<search):
        low=formula+1
 else:
-    print("Element not found!") 
+    print("Element not found!")
