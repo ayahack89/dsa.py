@@ -33,7 +33,7 @@ class Queue:
             print(temp.data)
             temp=temp.address
 
-#Call....
+#Call.....
 oc=Queue()
 while True:
     choice=str(input("Insert->1 \n Delete->2 \n Enter your choice: "))
