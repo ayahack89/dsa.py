@@ -8,7 +8,7 @@ class node:
         self.data=data
         self.address=None
         
-#Now we implement the Stack portion using llinked list.....
+#Now we implement the Stack portion using llinked list.......
 class Stack:
     def __init__(self):
         self.top=None
