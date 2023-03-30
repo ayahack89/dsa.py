@@ -23,7 +23,7 @@ class Queue:
     def delete(self):
         if self.front is None:
             print("Empty...")
-            return print("Underflow!")
+            return print("UNDERFLOW!")
         else:
             print(self.front.data)
             self.front=self.front.address

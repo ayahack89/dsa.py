@@ -23,7 +23,7 @@ class Stack:
     def pop(self):
         if self.top is None:
             print("Linked List is empty, can't delete it.")
-            return print("ERROR")
+            return print("UNDERFLOW")
         else:
             print(self.top.data)
             self.top=self.top.address
