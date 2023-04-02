@@ -28,7 +28,7 @@ class bstree:
         if node is None:
             return False
         else:
-            node.
+            node
 
 
             # Code under construction , 
