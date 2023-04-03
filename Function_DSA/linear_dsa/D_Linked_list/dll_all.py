@@ -40,10 +40,23 @@ class D_linked_L:
         self.last.next=newNode
         self.last=newNode
     def delete_at_front(self):
-        temp=self.head
+        delete_node=self.head
         if self.head is None:
-            print("Linked List is full , can't delete it's.")
+            print("Linked List is empty, can't delete.")
             return("ERROR")
+        else:
+            self.head=delete_node.next
+            delete_node.previous=None
+    def delete_at_random_position(self,position):
+        delete_node=self.head
+        position=position-1
+        while(position>0):
+            position=position-1
+
+
+
+
+        
 
           
     def printList(self):
