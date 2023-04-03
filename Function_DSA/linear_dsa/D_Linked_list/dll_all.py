@@ -21,21 +21,29 @@ class D_linked_L:
         temp=self.head
         newNOde=List(data)
         self.head=newNOde.next
+        temp.previous=newNOde
         newNOde.next=temp
     def insert_at_random_position(self,data,position):
         temp=self.head
         newNode=List(data)
-        position=position-2
+        position=position-1
         while(position>0):
             position=position-1
             temp=temp.next
-        newNode.previous=temp.next
+        newNode.previous=temp.previous
         newNode.next=temp
+        temp.previous.next=newNode
+        temp.previous=newNode
     def insert_at_last_position(self,data):
-        temp=self.head
         newNode=List(data)
-        self.last.next=newNode
         newNode.previous=self.last
+        self.last.next=newNode
+        self.last=newNode
+    def delete_at_front(self):
+        temp=self.head
+        if self.head is None:
+            print("Linked List is full , can't delete it's.")
+            return("ERROR")
 
           
     def printList(self):
