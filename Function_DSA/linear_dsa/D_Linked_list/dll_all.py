@@ -20,7 +20,7 @@ class D_linked_L:
     def insert_at_front_position(self,data):
         temp=self.head
         newNOde=List(data)
-        self.head=newNOde.next
+        newNOde.next=self.head
         temp.previous=newNOde
         newNOde.next=temp
     def insert_at_random_position(self,data,position):
@@ -52,7 +52,7 @@ class D_linked_L:
         position=position-1
         while(position>0):
             position=position-1
-            
+
 
     def delete_at_last(self):
         delete_node=self.head
