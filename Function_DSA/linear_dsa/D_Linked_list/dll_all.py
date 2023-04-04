@@ -52,6 +52,17 @@ class D_linked_L:
         position=position-1
         while(position>0):
             position=position-1
+            
+
+    def delete_at_last(self):
+        delete_node=self.head
+        if self.head is None:
+            print("D Linked List is empty, can't delete.")
+            return print("ERROR")
+        else:
+            delete_node.previous=None
+            delete_node.next=self.last
+
 
 
 
@@ -75,19 +86,70 @@ class D_linked_L:
 
 #Call.........
 p=D_linked_L()
-a=int(input("Number of inputs: "))
-for j in range(0,a):
-    p.create(int(input("NOde.Data > ")))
-data=int(input("Enter a data to insert: "))
-position=int(input("Enter a position to insert a given node: "))
-p.insert_at_front_position(data)
-p.printList()
-print("Data Inserted.....")
-p.insert_at_random_position(data,position)
-p.printList()
-print("Data Inserted......")
-p.insert_at_last_position(data)
-p.printList()
-print("Data Inserted......")
-print("END")
+while True:
+    choice=str(input(" 1-PRINT DLL \n 2-INSERT AT FRONT POSITIONE \n 3-INSERT AT RANDOM POSITION \n 4-INSERT AT LAST POSITION \n 5-DELETE AT FRONT POSITION \n 6-DELETE AT RANDOM POSITION \n 7-DELETE AT LAST POSITION \n 8-END \n ENTER YOUR CHOICE:  "))
+    if choice=='1':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        print("All Element....")
+        p.printList()
+        print("END")
+    elif choice=='2':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        data=int(input("Enter a data to insert: "))
+        p.insert_at_front_position(data)
+        print("Data Inserted.")
+        p.printList()
+        print("END")
+    elif choice=='3':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        data=int(input("Insert a data to insert a random position: "))
+        position=int(input("Enter a position to insert the given node: "))
+        p.insert_at_random_position(data,position)
+        print("Data Inserted.")
+        p.printList()
+        print("END")
+    elif choice=='4':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        data=int(input("Enter a data to insert at last position:  "))
+        p.insert_at_last_position(data)
+        print("Data Inserted.")
+        p.printList()
+        print("END")
+    elif choice=='5':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        p.delete_at_front()
+        print("Data Deleted.")
+        p.printList()
+        print("END")
+    elif choice=='6':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        position=int(input("Enter a position to delete the given node"))
+        p.delete_at_random_position(position)
+        print("Data Deleted.")
+        p.printList()
+        print("END")
+    elif choice=='7':
+        a=int(input("Number of Inputs:- "))
+        for j in range(0,a):
+            p.create(int(input("Node.Data > ")))
+        p.delete_at_last()
+        print("Data Deleted.")
+        p.printList()
+        print("END")
+    elif choice=='8':
+        break
+    else:
+        print("ERROR")
      
