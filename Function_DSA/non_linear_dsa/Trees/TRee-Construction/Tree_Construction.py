@@ -21,21 +21,53 @@ class Tree:
                     temp=temp.left_son
                 else:
                     temp=temp.right_son
-
+            
+            if data<previous.data:
+                previous.left_son=newNode
+            else:
+                previous.right_son=newNode
 # INOREDR = LEFT>ROOT>RIGHT;
-    def inorder(self,root):
+    def inOrder(self,root):
         if root.left_son is not None:
-            e.inorder(root.left_son)
-            print(root.data)
+            e.inOrder(root.left_son)
+        print(root.data)
         
         if root.right_son is not None:
-            e.inorder(root.right_son)
-            print(root.data)
+            e.inOrder(root.right_son)
+
+# PREORDER = ROOT>LEFT>RIGHT;
+    def preOrder(self,root):
+        print(root.data)
+
+        if root.left_son is not None:
+            e.preOrder(root.left_son)
+        
+        if root.right_son is not None:
+            e.preOrder(root.right_son)
+
+# POSTORDER = LEFT>RIGHT>ROOT;
+    def postOrder(self,root):
+        if root.left_son is not None:
+            e.postOrder(root.left_son)
+        
+        if root.right_son is not None:
+            e.postOrder(root.right_son)
+
+        print(root.data)
+
+       
+
+        
 
                 
 e=Tree()
 a = int(input("Number of inputs:- "))
 for j in range(0,a):
     e.insert(int(input("Node.Data:: ")))
-e.inorder(e.root)
+print("INORDER-")
+e.inOrder(e.root)
+print("PREORDER-")
+e.preOrder(e.root)
+print("POSTOREDR-")
+e.postOrder(e.root)
 print("Tree constracted....")
