@@ -57,9 +57,7 @@ class Tree:
 
        
 
-        
-
-                
+#Call-::::-
 e=Tree()
 a = int(input("Number of inputs:- "))
 for j in range(0,a):
