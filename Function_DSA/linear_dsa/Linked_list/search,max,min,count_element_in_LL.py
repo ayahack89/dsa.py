@@ -38,6 +38,12 @@ class Linked_List:
         print(f"LL value Count ~ {count}")
     def maxvalue(self):
         temp=self.head
+        smv=self.head.data
+        while temp is not None:
+            if temp.data<smv:
+                smv=smv.data
+            temp=temp.data
+        print(f"This is a max value {smv} ")
                 
 
             
@@ -57,6 +63,10 @@ search=int(input("Enter a element to search: "))
 g.search_el(search)
 print("Count List-")
 g.count_el()
+print("Maximum-")
+g.maxvalue()
 print("Linked List")
 g.printList()
 print("END")
+
+#CODE UNDERCONSTRUCTION..............
