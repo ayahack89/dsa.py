@@ -21,7 +21,7 @@ found=0
 for k in xx:
     if k=='(':
         push('(')
-        print("BALENCED")
+        print("BALANCED")
     elif k==')':
         if top==-1:
             found=found+1
@@ -30,9 +30,9 @@ for k in xx:
             pop()
 if found!=1:
     if top!=-1:
-        print("BALENCED")
+        print("BALANCED")
     else:
-        print("BALENCED")
+        print("BALANCED")
 
             
         
