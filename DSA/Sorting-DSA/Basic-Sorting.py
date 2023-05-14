@@ -1,4 +1,4 @@
-# Selection Sorting in array.
+# Basic Sorting technique in array.
 """Here 'a' is an Array[list]."""
 a = [23, 67, 38, 19, 56, 78, 44, 88, 90, 100, 1200, 346, 789, 845, 4, 6, 1, 3908, 2, 10]
 print(a)
