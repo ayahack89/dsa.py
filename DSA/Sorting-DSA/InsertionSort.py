@@ -9,7 +9,7 @@ def insertionSort(arr):
         arr[j + 1] = key
 
 
-numbers = [3, 5, 1, 8, 6, 2]
-print("PREVIOUS LIST:- ", numbers)
-insertionSort(numbers)
-print(f"AFTER INSERTION SORTING:- {numbers}")
+arr = [3, 5, 1, 8, 6, 2]
+print("PREVIOUS LIST:- ", arr)
+insertionSort(arr)
+print(f"AFTER INSERTION SORTING:- {arr}")
