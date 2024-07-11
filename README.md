@@ -1,2 +1,2 @@
-# DSA-In-PY
-Basic DSA (Data Structure & Algorithm) using Python by Ayanabha Chatterjee. Here are some basic DSA programs. You can easily access it. 
+# Basicdsa.py
+<strong>Basic DSA in Python. It's conducive for those who want to build a good career in Python development or as a Python programmer.</strong>
